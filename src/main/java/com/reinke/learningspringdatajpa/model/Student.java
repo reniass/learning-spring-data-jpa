@@ -15,11 +15,11 @@ public class Student {
     @Id
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "sequence_student"
+            generator = "student_sequence"
     )
     @SequenceGenerator(
-            name = "sequence_student",
-            sequenceName = "sequence_student",
+            name = "student_sequence",
+            sequenceName = "student_sequence",
             allocationSize = 1
     )
     private Long id;
